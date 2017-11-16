@@ -1,0 +1,6 @@
+{
+  "name": "blog",
+  "scripts": {
+    "serve": "python -m SimpleHTTPServer"
+  }
+}
