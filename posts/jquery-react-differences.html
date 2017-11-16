@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="jamesrsilvester blog">
+    <meta name="author" content="jamesrsilvester">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Blog Post Template</title>
+  </head>
+  <header>
+    <div class="nav">
+      <img class="logo" src="../assets/logo.png" />
+      <!-- <div class="placeholder">
+        <h1>placeholder</h1>
+      </div> -->
+    </div>
+  </header>
+  <body>
+    <div class="container">
+      <left class="bumper">
+
+      </left>
+      <main>
+          <h1>Differences Between jQuery and React</h1>
+          <p>
+            Let’s briefly touch on the similarities first. Both React and jQuery are javascript libraries that handle interface changes. The way they go about it is fundamentally different.</br></br>
+jQuery event handlers and corresponding UI changes are made by directly manipulating the existing HTML that has already been rendered to the DOM.</br></br>
+In contrast, event handlers in React do not directly affect the existing HTML. Instead those changes are recorded within the State object, which controls an intermediary layer commonly known as the “virtual” or “shadow” DOM. The HTML of the “Shadow” DOM and Actual DOM are then compared for differences. When a difference is found, the Actual DOM is partially re-rendered in order to reflect the requested update.
+Partial rendering is the key here, because it points to one of the main performance advantages of React. Because React instructs the page to re-render only the HTML for where a change is found, it removes the redundancy of having unchanged HTML load multiple times.
+          </p>
+          <img class="inline_image" src="https://i.imgur.com/BxOlY5Q.png" alt="diagram"/ />
+      </main>
+      <right class="bumper">
+
+      <!-- </right> -->
+    </div>
+  </body>
+</html>

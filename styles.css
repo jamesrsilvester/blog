@@ -1,0 +1,76 @@
+body {
+  font-family: 'Oxygen', sans-serif;
+  /*border: 5px solid green;*/
+}
+
+p {
+  font-size: 20px;
+}
+
+.inline_image {
+  align-self: center;
+  /*border: 5px solid red;*/
+  margin-left: 10%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /*border: 5px solid blue;*/
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-height: 100px;
+  padding-left: 10px;
+  /*padding-top: 10%;*/
+  align-self: center;
+}
+
+.placeholder {
+  /*border: 5px solid red;*/
+  min-height: 50px;
+}
+
+.title {
+  /*font-weight: 100;*/
+  color: red;
+}
+
+.bumper {
+  min-width: 10%;
+  /*border: 5px solid grey;*/
+}
+
+/*MEDIUM Screen Size*/
+@media all and (max-width: 500px) {
+  img {
+    max-width: 500px;
+  }
+
+
+/*SMALL Screen Size*/
+@media all and (max-width: 500px) {
+ .container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .bumper {
+    max-height: 5%;
+    /*border: 5px solid red;*/
+  }
+
+}
